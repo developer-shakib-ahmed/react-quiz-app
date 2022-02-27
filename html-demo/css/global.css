@@ -1,0 +1,159 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background-color: #f7f7f7;
+  font-family: arial;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0A101B;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input, textarea, select{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+h1{
+  font-size: 42px;
+}
+
+h2{
+  font-size: 32px;
+}
+
+p{
+  margin-bottom: 16px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a{
+  color: #ff9800;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a span {
+  color: #0A101B;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #ddd;
+  line-height: 1;
+  border-radius: 5px;
+  text-decoration: none !important;
+}
+
+.btn-green{
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.btn-green:hover{
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.btn-orange{
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.btn-orange:hover{
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.wrap{
+  width: 100%;
+  max-width: 1240px;
+  margin:0 auto;
+  padding: 0px 15px;
+}
+
+main{
+  padding: 80px 0px;
+}
+
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  width: auto;
+  max-height: 50px;
+}
+
+header .wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+  margin-left: 15px;
+}
+
+nav ul li a{
+  display: block;
+  color: #0A101B;
+}
+
+
+/* Title */
+.entry-title {
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.entry-title:after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #f39c12;
+}
+
+
+/* Footer */
+footer {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 30px 0px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}

@@ -1,0 +1,60 @@
+.form-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.illustration {
+  flex: 0 0 48%;
+  background: #fff;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration img {
+  max-width: 250px;
+}
+
+form {
+  flex: 0 0 48%;
+  background: #fff;
+  padding: 25px;
+}
+
+form .field {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #f39c12;
+  outline: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #0A101B;
+  transition: 0.25s;
+}
+
+form .field:focus{
+  border: 1px solid #27ae60;
+}
+
+form .submit {
+  display: block;
+  padding: 15px 25px;
+  background: #f39c12;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.25s;
+}
+
+form .submit:hover{
+  background-color: #27ae60;
+}
+
+form label {
+  cursor: pointer;
+}

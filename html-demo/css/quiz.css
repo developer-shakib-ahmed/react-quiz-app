@@ -1,0 +1,125 @@
+.form-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.illustration {
+  flex: 0 0 48%;
+  background: #fff;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration img {
+  max-width: 250px;
+}
+
+form {
+  flex: 0 0 48%;
+  background: #fff;
+  padding: 25px;
+}
+
+form .qn-title{
+  margin-bottom: 25px;
+}
+
+form label {
+  margin-bottom: 16px;
+  display: block;
+  background: #eee;
+  padding: 15px 15px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: 0.25s;
+  border-radius: 4px;
+}
+
+form input[type="checkbox"]{
+  margin-right: 10px;
+}
+
+form input[type="radio"]{
+  margin-right: 10px;
+}
+
+form label:hover{
+  background-color: #ddd;
+}
+
+form label:last-child{
+  margin-bottom: 0;
+}
+
+.progress-bar {
+  background: #fff;
+  margin-top: 35px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  align-items: center;
+}
+
+.progress-bar .bar {
+  flex: 1 1 auto;
+  margin: 0px 15px;
+  position: relative;
+}
+
+.progress-bar .tooltip {
+  position: absolute;
+  top: -58px;
+  background: #0A101B;
+  color: #fff;
+  line-height: 1;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.progress-bar .tooltip:after {
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: #0A101B;
+  border-radius: 0px 0px 3px 0px;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.progress-bar .progress {
+  background: #ddd;
+  height: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.progress-bar .indecator {
+  background: #0A101B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 4px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.progress-bar .indecator:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 0;
+  z-index: 9;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #0A101B;
+}

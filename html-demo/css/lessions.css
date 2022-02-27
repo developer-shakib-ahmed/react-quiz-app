@@ -1,0 +1,34 @@
+/* Lessions */
+
+.lessions {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lessions .card {
+  flex: 0 0 25%;
+  padding: 12px;
+}
+.lessions .card a {
+  display: block;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+.lessions .card h2 {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #0A101B;
+  margin: 12px 0px;
+  transition: 0.25s;
+}
+.lessions .card:hover h2{
+  color: #ff9800;
+}
+.lessions .card .meta {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.2;
+}
