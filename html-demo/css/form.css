@@ -6,7 +6,7 @@
 
 .illustration {
   flex: 0 0 48%;
-  background: #fff;
+  background: var(--white-1);
   padding: 25px;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
 
 form {
   flex: 0 0 48%;
-  background: #fff;
+  background: var(--white-1);
   padding: 25px;
 }
 
@@ -27,32 +27,32 @@ form .field {
   display: block;
   width: 100%;
   padding: 15px;
-  border: 1px solid #f39c12;
+  border: 1px solid var(--orange-1);
   outline: 0;
   border-radius: 4px;
   font-size: 14px;
-  color: #0A101B;
+  color: var(--black-1);
   transition: 0.25s;
 }
 
 form .field:focus{
-  border: 1px solid #27ae60;
+  border: 1px solid var(--green-1);
 }
 
 form .submit {
   display: block;
   padding: 15px 25px;
-  background: #f39c12;
+  background: var(--orange-1);
   border: 0;
   border-radius: 4px;
-  color: #fff;
+  color: var(--white-1);
   cursor: pointer;
   outline: 0;
   transition: 0.25s;
 }
 
 form .submit:hover{
-  background-color: #27ae60;
+  background-color: var(--green-1);
 }
 
 form label {

@@ -6,7 +6,7 @@
 
 .illustration {
   flex: 0 0 48%;
-  background: #fff;
+  background: var(--white-1);
   padding: 25px;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
 
 form {
   flex: 0 0 48%;
-  background: #fff;
+  background: var(--white-1);
   padding: 25px;
 }
 
@@ -30,12 +30,19 @@ form .qn-title{
 form label {
   margin-bottom: 16px;
   display: block;
-  background: #eee;
+  background: var(--body-bg);
   padding: 15px 15px;
   line-height: 1.2;
   cursor: pointer;
   transition: 0.25s;
   border-radius: 4px;
+}
+form label:hover{
+  background-color: var(--white-3);
+}
+
+form label:last-child{
+  margin-bottom: 0;
 }
 
 form input[type="checkbox"]{
@@ -46,18 +53,10 @@ form input[type="radio"]{
   margin-right: 10px;
 }
 
-form label:hover{
-  background-color: #ddd;
-}
-
-form label:last-child{
-  margin-bottom: 0;
-}
-
 .progress-bar {
-  background: #fff;
+  background: var(--white-1);
   margin-top: 35px;
-  border: 1px solid #eee;
+  border: 1px solid var(--white-3);
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
@@ -74,8 +73,8 @@ form label:last-child{
 .progress-bar .tooltip {
   position: absolute;
   top: -58px;
-  background: #0A101B;
-  color: #fff;
+  background: var(--black-1);
+  color: var(--white-1);
   line-height: 1;
   font-size: 14px;
   padding: 8px 10px;
@@ -89,20 +88,20 @@ form label:last-child{
   left: 50%;
   width: 12px;
   height: 12px;
-  background: #0A101B;
+  background: var(--black-1);
   border-radius: 0px 0px 3px 0px;
   transform: translateX(-50%) rotate(45deg);
 }
 
 .progress-bar .progress {
-  background: #ddd;
+  background: var(--white-2);
   height: 4px;
   border-radius: 4px;
   position: relative;
 }
 
 .progress-bar .indecator {
-  background: #0A101B;
+  background: var(--black-1);
   position: absolute;
   top: 0;
   left: 0;
@@ -121,5 +120,5 @@ form label:last-child{
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #0A101B;
+  background-color: var(--black-1);
 }

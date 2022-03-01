@@ -1,32 +1,32 @@
-/* Lessions */
+/* Lessons */
 
-.lessions {
+.lessons {
   display: flex;
   flex-wrap: wrap;
 }
-.lessions .card {
+.lessons .card {
   flex: 0 0 25%;
   padding: 12px;
 }
-.lessions .card a {
+.lessons .card a {
   display: block;
-  background: #fff;
-  border: 1px solid #eee;
+  background: var(--white-1);
+  border: 1px solid var(--white-3);
   border-radius: 5px;
   padding: 10px;
   text-decoration: none;
 }
-.lessions .card h2 {
+.lessons .card h2 {
   font-size: 16px;
   line-height: 1.2;
-  color: #0A101B;
+  color: var(--black-1);
   margin: 12px 0px;
   transition: 0.25s;
 }
-.lessions .card:hover h2{
-  color: #ff9800;
+.lessons .card:hover h2{
+  color: var(--orange-1);
 }
-.lessions .card .meta {
+.lessons .card .meta {
   font-size: 14px;
   display: flex;
   justify-content: space-between;

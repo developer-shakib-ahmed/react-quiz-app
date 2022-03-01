@@ -1,3 +1,21 @@
+:root{
+  --body-bg: #F2F6FC;
+  --white-1: #ffffff;
+  --white-2: #dddddd;
+  --white-3: #eeeeee;
+  --black-1: #0A101B;
+  --orange-1: #f39c12;
+  --orange-2: #f1c40f;
+  --green-1: #27ae60;
+  --green-2: #2ecc71;
+  --green-3: #74ffaf;
+  --red-1: #c0392b;
+  --red-2: #ffa49e;
+
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
 *{
   margin:0;
   padding:0;
@@ -5,20 +23,19 @@
 }
 
 body{
-  background-color: #f7f7f7;
-  font-family: arial;
+  background-color: var(--body-bg);
   font-size: 16px;
   line-height: 26px;
-  color: #0A101B;
-  font-family: 'Open Sans', sans-serif;
+  color: var(--black-1);
+  font-family: var(--font-open-sans);
 }
 
 input, textarea, select{
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat);
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat);
   margin-bottom: 10px;
 }
 
@@ -39,7 +56,7 @@ p:last-child {
 }
 
 a{
-  color: #ff9800;
+  color: var(--orange-1);
   text-decoration: none;
   transition: 0.25s;
 }
@@ -49,7 +66,7 @@ a:hover {
 }
 
 a span {
-  color: #0A101B;
+  color: var(--black-1);
 }
 
 img{
@@ -59,30 +76,30 @@ img{
 
 .btn {
   padding: 10px 20px;
-  background: #ddd;
+  background: var(--white-2);
   line-height: 1;
   border-radius: 5px;
   text-decoration: none !important;
 }
 
 .btn-green{
-  background-color: #27ae60;
-  color: #fff;
+  background-color: var(--green-1);
+  color: var(--white-1);
 }
 
 .btn-green:hover{
-  background-color: #2ecc71;
-  color: #fff;
+  background-color: var(--green-2);
+  color: var(--white-1);
 }
 
 .btn-orange{
-  background-color: #f39c12;
-  color: #fff;
+  background-color: var(--orange-1);
+  color: var(--white-1);
 }
 
 .btn-orange:hover{
-  background-color: #f1c40f;
-  color: #fff;
+  background-color: var(--orange-2);
+  color: var(--white-1);
 }
 
 .wrap{
@@ -99,9 +116,9 @@ main{
 
 /* Header */
 header {
-  background-color: #fff;
+  background-color: var(--white-1);
   padding: 10px 0px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--white-3);
 }
 
 .logo img {
@@ -126,7 +143,7 @@ nav ul li{
 
 nav ul li a{
   display: block;
-  color: #0A101B;
+  color: var(--black-1);
 }
 
 
@@ -145,15 +162,15 @@ nav ul li a{
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  background-color: #f39c12;
+  background-color: var(--orange-1);
 }
 
 
 /* Footer */
 footer {
-  background-color: #fff;
+  background-color: var(--white-1);
   overflow: hidden;
   padding: 30px 0px;
   text-align: center;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--white-3);
 }
