@@ -1,0 +1,5 @@
+form {
+  flex: 0 0 48%;
+  background: var(--white-1);
+  padding: 25px;
+}

@@ -1,0 +1,23 @@
+.fieldWrap {
+  margin-bottom: 16px;
+  cursor: pointer;
+  display: block;
+  font-family: var(--font-montserrat);
+}
+
+.field {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--orange-1);
+  outline: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--black-1);
+  transition: 0.25s;
+}
+
+.field:focus{
+  border: 1px solid var(--green-1);
+}

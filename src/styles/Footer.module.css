@@ -1,0 +1,7 @@
+.footer {
+  background-color: var(--white-1);
+  overflow: hidden;
+  padding: 30px 0px;
+  text-align: center;
+  border-top: 1px solid var(--white-3);
+}

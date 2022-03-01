@@ -1,0 +1,27 @@
+.quizResult {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.result {
+  flex: 0 0 48%;
+  background: var(--white-1);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result h1 {
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.result h1 span {
+  display: block;
+  font-size: 70%;
+  margin-bottom: 15px;
+}

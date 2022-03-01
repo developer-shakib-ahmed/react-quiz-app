@@ -1,0 +1,30 @@
+header {
+  background-color: var(--white-1);
+  padding: 10px 0px;
+  border-bottom: 1px solid var(--white-3);
+}
+
+.logo img {
+  width: auto;
+  max-height: 50px;
+}
+
+.headerWrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+  margin-left: 15px;
+}
+
+nav ul li a{
+  display: block;
+  color: var(--black-1);
+}

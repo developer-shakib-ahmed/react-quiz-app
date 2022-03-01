@@ -1,0 +1,10 @@
+.wrap{
+  width: 100%;
+  max-width: 1240px;
+  margin:0 auto;
+  padding: 0px 15px;
+}
+
+main{
+  padding: 80px 0px;
+}

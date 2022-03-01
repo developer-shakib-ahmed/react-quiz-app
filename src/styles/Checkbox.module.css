@@ -1,0 +1,22 @@
+label {
+  margin-bottom: 16px;
+  display: block;
+  background: var(--body-bg);
+  padding: 15px 15px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: 0.25s;
+  border-radius: 4px;
+}
+
+label:last-child{
+  margin-bottom: 0;
+}
+
+label:hover{
+  background-color: var(--white-3);
+}
+
+input{
+  margin-right: 10px;
+}

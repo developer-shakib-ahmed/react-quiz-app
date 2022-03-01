@@ -1,0 +1,69 @@
+.progressBar {
+  background: var(--white-1);
+  margin-top: 50px;
+  border: 1px solid var(--white-3);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  align-items: center;
+}
+
+.bar {
+  flex: 1 1 auto;
+  margin: 0px 15px;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: -58px;
+  background: var(--black-1);
+  color: var(--white-1);
+  line-height: 1;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.tooltip:after {
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: var(--black-1);
+  border-radius: 0px 0px 3px 0px;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.progress {
+  background: var(--white-2);
+  height: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.indecator {
+  background: var(--black-1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 4px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.indecator:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 0;
+  z-index: 9;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--black-1);
+}

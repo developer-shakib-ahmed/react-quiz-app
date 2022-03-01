@@ -1,0 +1,33 @@
+.btn{
+  cursor: pointer;
+  padding: 15px 25px;
+  line-height: 1.2;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  font-family: var(--font-montserrat);
+  transition: 0.25s;
+}
+.btnGreen{
+  background-color: var(--green-1);
+  color: var(--white-1);
+}
+
+.btnGreen:hover{
+  background-color: var(--green-2);
+  color: var(--white-1);
+}
+
+.btnOrange{
+  background-color: var(--orange-1);
+  color: var(--white-1);
+}
+
+.btnOrange:hover{
+  background-color: var(--orange-2);
+  color: var(--white-1);
+}
+
+.btnDefault:hover{
+  background-color: var(--white-2);
+}
