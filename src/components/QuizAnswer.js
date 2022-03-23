@@ -1,9 +1,9 @@
 import Checkbox from './Checkbox';
 
-export default function QuizAnswer({ className }) {
+export default function QuizAnswer({ className, checked, label, disabled }) {
   return (
     <div className={className}>
-      <Checkbox checked label="Your option 1" />
+      <Checkbox checked={checked} label={label} disabled={disabled} />
     </div>
   );
 }

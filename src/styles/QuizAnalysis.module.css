@@ -14,15 +14,7 @@
 .quizAnswers{
   flex: 0 0 48%;
   background: var(--white-1);
-  padding: 25px;
-}
-
-.quizAnswers div{
-  margin-bottom: 16px;
-}
-
-.quizAnswers div:last-child{
-  margin-bottom: 0;
+  padding: 20px;
 }
 
 .right label{
@@ -31,4 +23,10 @@
 
 .wrong label{
   background-color: var(--red-2);
+}
+
+.quizAnswers > div{
+  width: 47%;
+  float: left;
+  margin: 8px 1.5%;
 }

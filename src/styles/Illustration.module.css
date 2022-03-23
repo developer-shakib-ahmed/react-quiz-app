@@ -9,4 +9,15 @@
 
 .illustration img {
   max-width: 250px;
+  margin: 0 auto;
+}
+
+.illustration .inner{
+  flex: 0 0 100%;
+}
+
+.illustration .inner iframe {
+  display: block;
+  width: 100%;
+  height: 290px;
 }

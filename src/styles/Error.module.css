@@ -1,0 +1,22 @@
+.error{
+  border: 2px solid var(--white-3);
+  padding: 8px 10px;
+  font-weight: 600;
+  margin: 25px 0px;
+  border-radius: 5px;
+}
+
+.error[data-type="danger"]{
+  color: var(--red-1);
+  border-color: var(--red-1);
+}
+
+.error[data-type="warning"]{
+  color: var(--orange-2);
+  border-color: var(--orange-2);
+}
+
+.error[data-type="info"]{
+  color: var(--green-1);
+  border-color: var(--green-1);
+}

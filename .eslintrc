@@ -6,9 +6,12 @@
     "prettier",
     "plugin:jsx-a11y/recommended"
   ],
-  // "parser": "babel-eslint",
+  // "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 8
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "env": {
     "browser": true,
@@ -17,6 +20,10 @@
     "jest": true
   },
   "rules": {
+    "react/no-array-index-key": 0,
+    "react/jsx-no-constructed-context-values": 0,
+    "react/jsx-props-no-spreading": 0,
+    "no-unused-vars": 0,
     "import/no-named-as-default": 0,
     "class-methods-use-this": 0,
     "import/prefer-default-export": "off",
@@ -33,6 +40,7 @@
     "jsx-a11y/no-onchange": 0,
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/mouse-events-have-key-events": 0,
+    "jsx-a11y/label-has-associated-control": 0,
     "react/jsx-filename-extension": [
       1,
       {

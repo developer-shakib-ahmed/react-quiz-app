@@ -25,3 +25,12 @@
   font-size: 70%;
   margin-bottom: 15px;
 }
+
+.result .inner{
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.result .inner button{
+  margin-top: 30px;
+}

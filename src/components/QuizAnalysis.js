@@ -2,28 +2,36 @@ import classes from '../styles/QuizAnalysis.module.css';
 import EntryTitle from './EntryTitle';
 import QuizAnswer from './QuizAnswer';
 
-export default function QuizAnalysis() {
+export default function QuizAnalysis({ answers }) {
   return (
     <>
       <EntryTitle text="Quiz Analysis" />
 
-      <div className={classes.quizAnalysis}>
-        <div className={classes.quizDescriptions}>
-          <h3>Pick three of your favorite Star Wars Films</h3>
-          <p>
-            <b>Details:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, natus
-            blanditiis eum animi doloremque sit odio! Libero nobis assumenda voluptatem quas omnis
-            voluptates dolores, facere magni ullam cumque, doloremque nemo.
-          </p>
-        </div>
+      {answers.map((answer, index1) => (
+        <div className={classes.quizAnalysis} key={index1}>
+          <div className={classes.quizDescriptions}>
+            <h3>{answer.title}</h3>
+            <p>
+              <b>Details:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, natus
+              blanditiis eum animi doloremque sit odio! Libero nobis assumenda voluptatem quas omnis
+              voluptates dolores, facere magni ullam cumque, doloremque nemo.
+            </p>
+          </div>
 
-        <div className={classes.quizAnswers}>
-          <QuizAnswer className={classes.right} />
-          <QuizAnswer className={classes.wrong} />
-          <QuizAnswer className={classes.right} />
-          <QuizAnswer className={classes.wrong} />
+          <div className={classes.quizAnswers}>
+            {answer.options.map((option, index2) => (
+              <QuizAnswer
+                // eslint-disable-next-line no-nested-ternary
+                className={option.correct ? classes.right : option.checked ? classes.wrong : null}
+                label={option.title}
+                checked={option.checked}
+                disabled
+                key={index2}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      ))}
     </>
   );
 }

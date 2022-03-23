@@ -1,19 +1,25 @@
 import classes from '../styles/ProgressBar.module.css';
 import Button from './Button';
 
-export default function ProgressBar() {
+export default function ProgressBar({ prev, next, percentage, submit }) {
   return (
     <div className={classes.progressBar}>
-      <Button text="Back" className="btn-orange" />
+      <Button click={prev} disabled={percentage === 0} text="Back" className="btn-orange" />
 
       <div className={classes.bar}>
-        <div className={classes.tooltip}>100% Complete</div>
+        <div className={classes.tooltip} style={{ left: `${percentage}%` }}>
+          {percentage}% Complete
+        </div>
         <div className={classes.progress}>
-          <span className={classes.indecator} />
+          <span className={classes.indecator} style={{ width: `${percentage}%` }} />
         </div>
       </div>
 
-      <Button text="Next Question" className="btn-green" />
+      {percentage >= 100 ? (
+        <Button click={submit} text="Submit Answer" className="btn-orange" />
+      ) : (
+        <Button click={next} text="Next Question" className="btn-green" />
+      )}
     </div>
   );
 }

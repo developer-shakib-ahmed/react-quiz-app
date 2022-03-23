@@ -31,3 +31,12 @@
 .btnDefault:hover{
   background-color: var(--white-2);
 }
+
+.btn:disabled {
+  cursor: default;
+  background-color: var(--white-2) !important;
+}
+
+.btn:hover {
+  text-decoration: none;
+}

@@ -1,6 +1,6 @@
 import classes from '../styles/Button.module.css';
 
-export default function Button({ text, className }) {
+export default function Button({ text, className, type, disabled, click }) {
   let btnColors;
 
   switch (className) {
@@ -17,5 +17,14 @@ export default function Button({ text, className }) {
       break;
   }
 
-  return <button className={`${classes.btn} ${btnColors}`}>{text}</button>;
+  return (
+    <button
+      onClick={click}
+      disabled={disabled}
+      type={type}
+      className={`${classes.btn} ${btnColors}`}
+    >
+      {text}
+    </button>
+  );
 }

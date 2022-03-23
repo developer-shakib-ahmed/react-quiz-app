@@ -11,19 +11,24 @@
 
 .bar {
   flex: 1 1 auto;
-  margin: 0px 15px;
+  margin: 0px 80px;
   position: relative;
 }
 
 .tooltip {
   position: absolute;
-  top: -58px;
+  top: -50px;
   background: var(--black-1);
   color: var(--white-1);
   line-height: 1;
-  font-size: 14px;
+  font-size: 12px;
   padding: 8px 10px;
   border-radius: 5px;
+  left: auto;
+  transform: translateX(-62px);
+  width: 110px;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .tooltip:after {
@@ -50,7 +55,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 25%;
+  width: auto;
   height: 4px;
   border-radius: 4px;
   transition: 0.3s;

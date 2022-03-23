@@ -6,6 +6,9 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
+    "firebase": "^9.6.7",
+    "lodash": "^4.17.21",
+    "pexels": "^1.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.2",
@@ -17,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "mylint": "yarn add -D prettier && yarn add -D babel-eslint && yarn add -D eslint && yarn add -D eslint-plugin-import && yarn add -D eslint-plugin-jsx-a11y && yarn add -D eslint-plugin-react && yarn add -D eslint-plugin-react-hooks && yarn add -D eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"
+    "mylint": "yarn add -D prettier && yarn add --dev @babel/eslint-parser @babel/eslint-plugin && yarn add -D eslint && yarn add -D eslint-plugin-import && yarn add -D eslint-plugin-jsx-a11y && yarn add -D eslint-plugin-react && yarn add -D eslint-plugin-react-hooks && yarn add -D eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +41,6 @@
     ]
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
     "eslint": "^8.10.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.4.0",

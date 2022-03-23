@@ -1,19 +1,20 @@
+import { Link } from 'react-router-dom';
 import classes from '../styles/LessionCard.module.css';
 
-export default function LessionCard({ img, title, score, qn }) {
+export default function LessionCard({ img, title, score, qn, link }) {
   return (
     <div className={classes.card}>
-      <a href="quiz.html">
+      <Link to={link} state={{ videoTitle: title }}>
         <div className="video">
-          <img src={img} alt="" />
+          <img src={img} alt={title} />
           <h2>{title}</h2>
         </div>
 
         <div className={classes.meta}>
-          <span className="count">{qn} Questions</span>
-          <span className="score">Score: {score}</span>
+          <span className="count">Questions: {qn}</span>
+          <span className="score">Points: {score}</span>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

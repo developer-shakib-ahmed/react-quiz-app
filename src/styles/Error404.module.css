@@ -1,0 +1,11 @@
+.error404{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.error404 .error{
+  flex: 0 0 48%;
+  background: var(--white-1);
+  padding: 25px;
+}
